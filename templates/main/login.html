@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    Войтич через:
+    <ul>
+        <li><a href="{% url socialauth_begin 'vkontakte-oauth2' %}?next=/">ВК</a></li>
+    </ul>
+
+{% endblock %}
