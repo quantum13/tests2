@@ -40,14 +40,9 @@
             <a class="brand" href="{% url home %}">CRM</a>
             <div class="nav-collapse">
                 <ul class="nav pull-right">
-                    {% if perms.main.can_view_clients %}
-                        { % navitem 'clients' 'Список' %}
-                    {% endif %}
-                    {% if perms.main.can_edit_sms_deliveries %}
-                        { % navitem 'sms_deliveries' 'Рассылки' %}
-                    {% endif %}
 
-                    {% navitem 'home' 'Совместные покупки' %}
+                    {% navitem 'create_test' 'Создать тест' %}
+                    {% navitem 'create_test' 'Добавить ссылку на тест' %}
 
                     {% if user.is_authenticated %}
                         {% navitem 'logout' 'Выход' %}

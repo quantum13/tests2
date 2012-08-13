@@ -21,6 +21,8 @@ urlpatterns = patterns('',
     url(r'^$', 'main.views.home', name='home'),
     url(r'^login/$',  'main.views.login', name='login'),
 
+    url(r'^login/$',  'main.views.login', name='create_test'),
+
     url(r'', include('social_auth.urls')),
 
 
